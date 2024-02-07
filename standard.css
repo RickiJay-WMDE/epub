@@ -70,6 +70,9 @@ img {
 	height: auto;
 	width: auto;
 }
+ol {
+	margin: 1em;
+}
 .courier, .font-courier, .monospace, .telegram {
 	font-family: courier, monospace;
 }
