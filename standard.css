@@ -141,3 +141,34 @@ blockquote.lyrics {
 	margin-bottom: 0.4em;
 	text-indent: 0;
 }
+
+.phone {
+	margin-bottom: 0.8em;
+}
+.phone p.header {
+	text-indent: 0;
+	text-align: center;
+	font-weight: bold;
+}
+.phone p.text {
+	text-indent: 0;
+	text-align: left;
+	margin-right: 20%;
+}
+.phone p.greply {
+	text-indent: 0;
+	text-align: left;
+	margin-left: 20%;
+}
+.phone p.time {
+	text-indent: 0;
+	text-align: center;
+	margin-bottom: 0.4em;
+}
+div.textlone, p.textlone {
+	margin: 0.4em 10%;
+}
+p.textlone, div.textlone p {
+	text-indent: 0;
+	text-align: left;
+}
