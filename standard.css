@@ -1,15 +1,15 @@
 .story, .storytext, .userstuff, .fff_chapter, .fff_titlepage {
 	text-align: justify;
-}
-.story p, .storytext p, .userstuff p , .fff_chapter p , .fff_titlepage p {
-	margin-top: 0;
-	margin-bottom: 0;
-	text-indent: 1em;
+	p {
+		margin-top: 0;
+		margin-bottom: 0;
+		text-indent: 1em;
+	}
+	p:first-child {
+		text-indent: 0;
+	}
 }
 
-.story > p:first-child, .storytext > p:first-child, .userstuff > p:first-child {
-	text-indent: 0;
-}
 p.first, .first p, p.center, .center p, .noindent p, p.noindent {
 	text-indent: 0;
 }
