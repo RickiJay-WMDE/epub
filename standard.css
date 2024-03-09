@@ -1,14 +1,28 @@
 .story, .storytext, .userstuff, .fff_chapter, .fff_titlepage {
 	text-align: justify;
 }
+.story p, .storytext p, .userstuff p , .fff_chapter p , .fff_titlepage p {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-indent: 1em;
+}
+
 .story > p:first-child, .storytext > p:first-child, .userstuff > p:first-child {
 	text-indent: 0;
 }
+p.first, .first p, p.center, .center p, .noindent p, p.noindent {
+	text-indent: 0;
+}
+
 .right {
 	text-align: right;
 }
 h1, h2, h3, h4, h6, .center {
 	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	adobe-hyphenate: none;
 }
 h5 {
 	font-style: italic;
@@ -17,11 +31,7 @@ h5 {
 	margin-top: 1.2em;
 	margin-bottom: 0.8em;
 }
-.story p, .storytext p, .userstuff p , .fff_chapter p , .fff_titlepage p {
-	margin-top: 0;
-	margin-bottom: 0;
-	text-indent: 1em;
-}
+
 .space-above, p.space-above {
 	margin-top: 1em;
 }
@@ -31,37 +41,17 @@ h5 {
 .space-below, p.space-below {
 	margin-bottom: 1em;
 }
-p.first, .first p, p.center, .center p, .noindent p, p.noindent {
+p.tab {
+	margin-left: 2em;
 	text-indent: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-	adobe-hyphenate: none;
-}
+
 hr {
 	border: 2px solid;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
-p.tab {
-	margin-left: 2em;
-	text-indent: 0;
-}
-.message p, p.message {
-	padding-left: 1em;
-	text-indent: -1em;
-}
-.message p.center{
-	padding-left: 0em;
-	text-indent: 0em;
-	text-align: center;
-}
-.letter * em, .u {
-	text-decoration: underline;
-}
-.letter * strong {
-	text-decoration: underline;
-	font-weight: normal;
-}
+
 img {
 	display: block;
 	text-align: center;
@@ -73,34 +63,27 @@ img {
 p * img {
 	display: inline;
 }
+
 ol {
 	margin: 1em;
 }
+
 .courier, .font-courier, .monospace, .telegram {
 	font-family: courier, monospace;
 }
-.letter, .journal, .telegram {
-	text-align: left;
-}
-.letter, .poem, .lyrics, .newspaper, .journal, .textbook, .flashback, .italic {
-	font-style: italic;
-}
-.letter p, .poem p, .lyrics p, .newspaper p, .journal p, .textbook p, .telegram p {
-	text-indent: 0;
-	margin-bottom: 0.4em;
-}
+
 p.section-left, p.section-center, p.section-right {
 	text-indent: 0;
 }
-.poem * em, .lyrics * em, .newspaper * em, .journal * em, .textbook * em, em > em, .flashback > em, .flashback * em, h5 * em, .italic * em {
-	font-style: normal;
-}
+
 .flashback * em > em {
 	font-style: italic;
 }
+
 .newspaper * em > em {
 	font-style: italic;
 }
+
 blockquote {
 	margin-left: 2em;
 	margin-right: 2em;
@@ -109,9 +92,11 @@ blockquote.lyrics {
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
+
 .hide, .fff_chapter_notes {
 	display: none;
 }
+
 .section-left {
 	margin-right: 33%;
 	text-indent: 0;
@@ -123,6 +108,19 @@ blockquote.lyrics {
 }
 .section-right {
 	margin-left: 33%;
+	text-indent: 0;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.fff_foot_notes {
+	margin-top: 2em;
+}
+.fff_foot_notes * p {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
 	text-indent: 0;
 }
 
@@ -139,13 +137,36 @@ blockquote.lyrics {
 	font-weight: bold;
 }
 
-.fff_foot_notes {
-	margin-top: 2em;
+.letter * em, .u {
+	text-decoration: underline;
 }
-.fff_foot_notes * p {
-	margin-top: 0.4em;
-	margin-bottom: 0.4em;
+.letter * strong {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+.letter, .journal, .telegram {
+	text-align: left;
+}
+.letter, .poem, .lyrics, .newspaper, .journal, .textbook, .flashback, .italic {
+	font-style: italic;
+}
+.letter p, .poem p, .lyrics p, .newspaper p, .journal p, .textbook p, .telegram p {
 	text-indent: 0;
+	margin-bottom: 0.4em;
+}
+.poem * em, .lyrics * em, .newspaper * em, .journal * em, .textbook * em, em > em, .flashback > em, .flashback * em, h5 * em, .italic * em {
+	font-style: normal;
+}
+
+.message p, p.message {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.message p.center{
+	padding-left: 0em;
+	text-indent: 0em;
+	text-align: center;
 }
 
 .phone {
