@@ -151,6 +151,13 @@ p.section-right {
 }
 
 /* Flashback */
+.flashback {
+	font-style: italic;
+}
+.flashback > em,
+.flashback * em {
+	font-style: normal;
+}
 .flashback * em > em {
 	font-style: italic;
 }
@@ -207,23 +214,27 @@ blockquote.lyrics {
 	font-style: italic;
 }
 
-/* Quote Types */
+/* Telegram */
 .telegram {
 	text-align: left;
 }
+.telegram p {
+	text-indent: 0;
+	margin-bottom: 0.4em;
+}
+
+/* Quote Types */
 .poem,
 .lyrics,
 .newspaper,
 .textbook,
-.flashback,
 .italic {
 	font-style: italic;
 }
 .poem p,
 .lyrics p,
 .newspaper p,
-.textbook p,
-.telegram p {
+.textbook p {
 	text-indent: 0;
 	margin-bottom: 0.4em;
 }
@@ -232,8 +243,6 @@ blockquote.lyrics {
 .newspaper * em,
 .textbook * em,
 em > em,
-.flashback > em,
-.flashback * em,
 h5 * em,
 .italic * em {
 	font-style: normal;
