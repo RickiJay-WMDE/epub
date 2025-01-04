@@ -15,11 +15,6 @@
 	text-indent: 1em;
 }
 
-.story > p:first-child,
-.storytext > p:first-child,
-.userstuff > p:first-child {
-	text-indent: 0;
-}
 p.first,
 .first p,
 p.center,
