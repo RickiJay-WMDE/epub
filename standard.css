@@ -27,8 +27,7 @@ p.noindent {
 }
 
 /* Hide */
-.hide,
-.fff_chapter_notes {
+.hide {
 	display: none;
 }
 
@@ -41,8 +40,14 @@ p.noindent {
 }
 
 /* Bold/Italic */
+.italic {
+	font-style: italic;
+}
 .strong {
 	font-weight: bold;
+}
+.u {
+	text-decoration: underline;
 }
 
 /* Titles */
@@ -154,7 +159,10 @@ blockquote.lyrics {
 	font-style: italic;
 }
 
-
+/* Notes */
+.fff_chapter_notes {
+	display: none;
+}
 .fff_foot_notes {
 	margin-top: 2em;
 }
@@ -179,8 +187,15 @@ blockquote.lyrics {
 }
 
 /* Letter */
-.letter * em,
-.u {
+.letter {
+	text-align: left;
+	font-style: italic;
+}
+.letter p {
+	text-indent: 0;
+	margin-bottom: 0.4em;
+}
+.letter * em {
 	text-decoration: underline;
 }
 .letter * strong {
@@ -189,12 +204,10 @@ blockquote.lyrics {
 }
 
 /* Quote Types */
-.letter,
 .journal,
 .telegram {
 	text-align: left;
 }
-.letter,
 .poem,
 .lyrics,
 .newspaper,
@@ -204,7 +217,6 @@ blockquote.lyrics {
 .italic {
 	font-style: italic;
 }
-.letter p,
 .poem p,
 .lyrics p,
 .newspaper p,
