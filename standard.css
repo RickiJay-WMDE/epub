@@ -186,32 +186,34 @@ blockquote.lyrics {
 	font-weight: bold;
 }
 
-/* Letter */
+/* Journal, Letter */
+.journal,
 .letter {
 	text-align: left;
 	font-style: italic;
 }
+.journal p,
 .letter p {
 	text-indent: 0;
 	margin-bottom: 0.4em;
 }
+.journal * em,
 .letter * em {
 	text-decoration: underline;
 }
+.journal * strong,
 .letter * strong {
 	text-decoration: underline;
 	font-weight: normal;
 }
 
 /* Quote Types */
-.journal,
 .telegram {
 	text-align: left;
 }
 .poem,
 .lyrics,
 .newspaper,
-.journal,
 .textbook,
 .flashback,
 .italic {
@@ -220,7 +222,6 @@ blockquote.lyrics {
 .poem p,
 .lyrics p,
 .newspaper p,
-.journal p,
 .textbook p,
 .telegram p {
 	text-indent: 0;
@@ -229,7 +230,6 @@ blockquote.lyrics {
 .poem * em,
 .lyrics * em,
 .newspaper * em,
-.journal * em,
 .textbook * em,
 em > em,
 .flashback > em,
