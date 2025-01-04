@@ -43,6 +43,10 @@ p.noindent {
 .italic {
 	font-style: italic;
 }
+em > em,
+.italic * em {
+	font-style: normal;
+}
 .strong {
 	font-weight: bold;
 }
@@ -64,6 +68,9 @@ h5 {
 	font-size: 100%;
 	margin-top: 1.2em;
 	margin-bottom: 0.8em;
+}
+h5 * em {
+	font-style: normal;
 }
 
 /* Spacing */
@@ -208,9 +215,33 @@ blockquote.lyrics {
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
+.lyrics {
+	font-style: italic;
+}
+.lyrics p {
+	text-indent: 0;
+	margin-bottom: 0.4em;
+}
+.lyrics * em {
+	font-style: normal;
+}
 
-/* Newspaper */
-.newspaper * em > em {
+/* Newspaper/Textbook */
+.newspaper,
+.textbook {
+	font-style: italic;
+}
+.newspaper p,
+.textbook p {
+	text-indent: 0;
+	margin-bottom: 0.4em;
+}
+.newspaper * em,
+.textbook * em {
+	font-style: normal;
+}
+.newspaper * em > em,
+.textbook * em > em {
 	font-style: italic;
 }
 
@@ -233,28 +264,6 @@ blockquote.lyrics {
 .telegram p {
 	text-indent: 0;
 	margin-bottom: 0.4em;
-}
-
-/* Quote Types */
-.lyrics,
-.newspaper,
-.textbook,
-.italic {
-	font-style: italic;
-}
-.lyrics p,
-.newspaper p,
-.textbook p {
-	text-indent: 0;
-	margin-bottom: 0.4em;
-}
-.lyrics * em,
-.newspaper * em,
-.textbook * em,
-em > em,
-h5 * em,
-.italic * em {
-	font-style: normal;
 }
 
 /* Messages - Simple */
