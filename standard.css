@@ -67,7 +67,7 @@ em > em,
 	font-style: normal;
 }
 .strong {
-	font-weight: bold;
+	font-weight: 700;
 }
 .u {
 	text-decoration: underline;
