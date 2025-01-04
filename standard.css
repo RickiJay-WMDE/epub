@@ -39,21 +39,6 @@ p.noindent {
 	text-align: right;
 }
 
-/* Bold/Italic */
-.italic {
-	font-style: italic;
-}
-em > em,
-.italic * em {
-	font-style: normal;
-}
-.strong {
-	font-weight: bold;
-}
-.u {
-	text-decoration: underline;
-}
-
 /* Titles */
 h1,
 h2,
@@ -71,6 +56,21 @@ h5 {
 }
 h5 * em {
 	font-style: normal;
+}
+
+/* Bold/Italic */
+.italic {
+	font-style: italic;
+}
+em > em,
+.italic * em {
+	font-style: normal;
+}
+.strong {
+	font-weight: bold;
+}
+.u {
+	text-decoration: underline;
 }
 
 /* Spacing */
@@ -165,9 +165,6 @@ p.section-right {
 .flashback * em {
 	font-style: normal;
 }
-.flashback * em > em {
-	font-style: italic;
-}
 
 /* Blockquotes */
 blockquote {
@@ -239,10 +236,6 @@ blockquote.lyrics {
 .newspaper * em,
 .textbook * em {
 	font-style: normal;
-}
-.newspaper * em > em,
-.textbook * em > em {
-	font-style: italic;
 }
 
 /* Poem */
