@@ -1,3 +1,4 @@
+/* Basic Story Text */
 .story,
 .storytext,
 .userstuff,
@@ -15,6 +16,7 @@
 	text-indent: 1em;
 }
 
+/* First Paragraph */
 p.first,
 .first p,
 p.center,
@@ -24,18 +26,33 @@ p.noindent {
 	text-indent: 0;
 }
 
+/* Hide */
+.hide,
+.fff_chapter_notes {
+	display: none;
+}
+
+/* Alignment */
+.center {
+	text-align: center;
+}
 .right {
 	text-align: right;
 }
+
+/* Bold/Italic */
+.strong {
+	font-weight: bold;
+}
+
+/* Titles */
 h1,
 h2,
 h3,
 h4,
-h6,
-.center {
+h6 {
 	text-align: center;
 }
-
 h5 {
 	font-style: italic;
 	font-weight: normal;
@@ -44,6 +61,7 @@ h5 {
 	margin-bottom: 0.8em;
 }
 
+/* Spacing */
 .space-above,
 p.space-above {
 	margin-top: 1em;
@@ -61,12 +79,14 @@ p.tab {
 	text-indent: 0;
 }
 
+/* Horizontal Line */
 hr {
 	border: 2px solid;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
+/* Image */
 img {
 	display: block;
 	text-align: center;
@@ -79,10 +99,12 @@ p * img {
 	display: inline;
 }
 
+/* Ordered List */
 ol {
 	margin: 1em;
 }
 
+/* Monospace */
 .courier,
 .font-courier,
 .monospace,
@@ -90,34 +112,12 @@ ol {
 	font-family: courier, monospace;
 }
 
+/* Section */
 p.section-left,
 p.section-center,
 p.section-right {
 	text-indent: 0;
 }
-
-.flashback * em > em {
-	font-style: italic;
-}
-
-.newspaper * em > em {
-	font-style: italic;
-}
-
-blockquote {
-	margin-left: 2em;
-	margin-right: 2em;
-}
-blockquote.lyrics {
-	margin-top: 0em;
-	margin-bottom: 0em;
-}
-
-.hide,
-.fff_chapter_notes {
-	display: none;
-}
-
 .section-left {
 	margin-right: 33%;
 	text-indent: 0;
@@ -132,9 +132,28 @@ blockquote.lyrics {
 	text-indent: 0;
 }
 
-.strong {
-	font-weight: bold;
+/* Blockquotes */
+blockquote {
+	margin-left: 2em;
+	margin-right: 2em;
 }
+
+/* Flashback */
+.flashback * em > em {
+	font-style: italic;
+}
+
+/* Lyrics */
+blockquote.lyrics {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+/* Newspaper */
+.newspaper * em > em {
+	font-style: italic;
+}
+
 
 .fff_foot_notes {
 	margin-top: 2em;
@@ -145,6 +164,7 @@ blockquote.lyrics {
 	text-indent: 0;
 }
 
+/* Email */
 .email {
 	font-style: italic;
 }
@@ -158,6 +178,7 @@ blockquote.lyrics {
 	font-weight: bold;
 }
 
+/* Letter */
 .letter * em,
 .u {
 	text-decoration: underline;
@@ -167,6 +188,7 @@ blockquote.lyrics {
 	font-weight: normal;
 }
 
+/* Quote Types */
 .letter,
 .journal,
 .telegram {
@@ -205,6 +227,7 @@ h5 * em,
 	font-style: normal;
 }
 
+/* Messages - Simple */
 .message p,
 p.message {
 	padding-left: 1em;
@@ -216,6 +239,7 @@ p.message {
 	text-align: center;
 }
 
+/* Text Messages - Complex */
 .phone {
 	margin-bottom: 0.8em;
 }
