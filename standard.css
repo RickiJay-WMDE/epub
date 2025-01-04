@@ -214,6 +214,18 @@ blockquote.lyrics {
 	font-style: italic;
 }
 
+/* Poem */
+.poem {
+	font-style: italic;
+}
+.poem p {
+	text-indent: 0;
+	margin-bottom: 0.4em;
+}
+.poem * em {
+	font-style: normal;
+}
+
 /* Telegram */
 .telegram {
 	text-align: left;
@@ -224,21 +236,18 @@ blockquote.lyrics {
 }
 
 /* Quote Types */
-.poem,
 .lyrics,
 .newspaper,
 .textbook,
 .italic {
 	font-style: italic;
 }
-.poem p,
 .lyrics p,
 .newspaper p,
 .textbook p {
 	text-indent: 0;
 	margin-bottom: 0.4em;
 }
-.poem * em,
 .lyrics * em,
 .newspaper * em,
 .textbook * em,
