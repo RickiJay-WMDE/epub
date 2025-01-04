@@ -117,6 +117,19 @@ ol {
 	font-family: courier, monospace;
 }
 
+/* Notes */
+.fff_chapter_notes {
+	display: none;
+}
+.fff_foot_notes {
+	margin-top: 2em;
+}
+.fff_foot_notes * p {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+	text-indent: 0;
+}
+
 /* Section */
 p.section-left,
 p.section-center,
@@ -137,39 +150,15 @@ p.section-right {
 	text-indent: 0;
 }
 
-/* Blockquotes */
-blockquote {
-	margin-left: 2em;
-	margin-right: 2em;
-}
-
 /* Flashback */
 .flashback * em > em {
 	font-style: italic;
 }
 
-/* Lyrics */
-blockquote.lyrics {
-	margin-top: 0em;
-	margin-bottom: 0em;
-}
-
-/* Newspaper */
-.newspaper * em > em {
-	font-style: italic;
-}
-
-/* Notes */
-.fff_chapter_notes {
-	display: none;
-}
-.fff_foot_notes {
-	margin-top: 2em;
-}
-.fff_foot_notes * p {
-	margin-top: 0.4em;
-	margin-bottom: 0.4em;
-	text-indent: 0;
+/* Blockquotes */
+blockquote {
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 /* Email */
@@ -205,6 +194,17 @@ blockquote.lyrics {
 .letter * strong {
 	text-decoration: underline;
 	font-weight: normal;
+}
+
+/* Lyrics */
+blockquote.lyrics {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+/* Newspaper */
+.newspaper * em > em {
+	font-style: italic;
 }
 
 /* Quote Types */
