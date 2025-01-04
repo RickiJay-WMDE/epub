@@ -1,2 +1,3 @@
 # epub
-For hostign epub standard.css
+
+For hosting epub standard.css
