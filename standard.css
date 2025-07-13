@@ -57,6 +57,12 @@ h5 {
 h5 * em {
 	font-style: normal;
 }
+.lined {
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	margin: 0.7em 0;
+	padding: 0.3em 0;
+}
 
 /* Bold/Italic */
 .italic {
